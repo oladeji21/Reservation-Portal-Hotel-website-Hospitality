@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Confirmation</h1>
+        <p>Thank you, {{ name }} for your reservation!</p>
+        <p><strong>Number of Occupants:</strong> {{ occupants }}</p>
+        <p><strong>Sex:</strong> {{ sex }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Room Type:</strong> {{ room_type }}</p>
+        <p><strong>Number of Nights:</strong> {{ nights }}</p>
+        <p><strong>Total Cost:</strong> ${{ total_cost }}</p>
+    </div>
+</body>
+</html>
